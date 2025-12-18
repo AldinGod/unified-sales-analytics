@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/webserver_config.py
+
+# Spark / Delta
+delta-lake/bronze/_delta_log/
+delta-lake/silver/_delta_log/
+delta-lake/gold/_delta_log/
+
+delta-lake/bronze/*.parquet
+delta-lake/silver/*.parquet
+delta-lake/gold/*.parquet
+
+# Kafka logs (ako ikad dobiješ)
+kafka-logs/
+zookeeper/
+
+# IDE
+.vscode/
+.idea/
